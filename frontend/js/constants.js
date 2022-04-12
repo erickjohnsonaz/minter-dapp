@@ -1,5 +1,5 @@
-const contractAddress = "0xDB70c26AdF3A1f71D2b7cE2c23C34f5952Bf609A"; //Replace with your own contract address
-const chain = 'rinkeby'; // rinkeby or polygon
+const contractAddress = "0xdf4edB55C8130F0dD516A6792BDB49a6b18EB671"; //Replace with your own contract address
+const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Coral Frag Hags NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
