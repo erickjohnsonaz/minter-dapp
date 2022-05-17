@@ -364,6 +364,8 @@ async function mint() {
         console.log("Minted successfully!", `Transaction Hash: ${presaleMintTransaction.transactionHash}`);
       } else {
         const mainText = document.getElementById("mainText");
+        const gasPrice = "120";
+        const gas = 0.012;
         mainText.innerText = mint_failed;
         mintButton.innerText = button_presale_mint_whitelisted;
         mintButton.disabled = false;
