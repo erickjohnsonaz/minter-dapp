@@ -348,7 +348,7 @@ async function mint() {
     // PRE-SALE MINTING
     try {
       const merkleData = await fetch(
-        `/.netlify/functions/merkleProof/?wallet=${window.address}&chain=${chain}&contract=${contractAddress}, gasPrice: '20000000000', gas: 200000`
+        `/.netlify/functions/merkleProof/?wallet=${window.address}&chain=${chain}&contract=${contractAddress}, gasPrice: '20000000000', gas: 2000`
       );
       
       const merkleJson = await merkleData.json();
