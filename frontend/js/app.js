@@ -231,7 +231,7 @@ async function loadInfo() {
   const maxPerMint = document.getElementById("maxPerMint");
   const totalSupply = document.getElementById("totalSupply");
   const mintInput = document.getElementById("mintInput");
-  const gasPrice = "120";
+  const gasPrice = '120';
   const gas = 0.012;
   
   pricePerMint.innerText = `${price} ${priceType}`;
@@ -279,8 +279,7 @@ function setTotalPrice() {
   const mintInputValue = parseInt(mintInput.value);
   const totalPrice = document.getElementById("totalPrice");
   const mintButton = document.getElementById("mintButton");
-  const gasPrice = "120";
-  const gas = 0.012;
+
   if(mintInputValue < 1 || mintInputValue > info.deploymentConfig.tokensPerMint) {
     totalPrice.innerText = 'INVALID QUANTITY';
     mintButton.disabled = true;
@@ -299,7 +298,7 @@ function setTotalPrice() {
   totalPrice.innerText = `${price} ${priceType}`;
   mintButton.disabled = false;
   mintInput.disabled = false;
-  const gasPrice = "120";
+  const gasPrice = '120';
   const gas = 0.012;
 }
 
@@ -370,7 +369,7 @@ async function mint() {
         console.log("Minted successfully!", `Transaction Hash: ${presaleMintTransaction.transactionHash}`);
       } else {
         const mainText = document.getElementById("mainText");
-        const gasPrice = "120";
+        const gasPrice = '120";
         const gas = 0.012;
         mainText.innerText = mint_failed;
         mintButton.innerText = button_presale_mint_whitelisted;
