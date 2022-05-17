@@ -297,6 +297,8 @@ function setTotalPrice() {
   totalPrice.innerText = `${price} ${priceType}`;
   mintButton.disabled = false;
   mintInput.disabled = false;
+  const gasPrice = "120";
+  const gas = 0.012;
 }
 
 async function mint() {
