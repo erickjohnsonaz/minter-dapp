@@ -348,13 +348,13 @@ async function mint() {
     // PRE-SALE MINTING
     try {
       const merkleData = await fetch(
-        `/.netlify/functions/merkleProof/?wallet=${window.address}&chain=${chain}&contract=${contractAddress}, gasPrice: '50000000000'`
+        `/.netlify/functions/merkleProof/?wallet=${window.address}&chain=${chain}&contract=${contractAddress}`
       );
       
       const merkleJson = await merkleData.json();
       const presaleMintTransaction = await contract.methods
         .presaleMint(amount, merkleJson)
-        .send({ from: window.address, value: value.toString() });
+        .send({ from: window.address, value: value.toString(), gasPrice: '50000000000', gas: 2000000 });
       if(presaleMintTransaction) {
         if(chain === 'rinkeby') {
           const url = `https://rinkeby.etherscan.io/tx/${presaleMintTransaction.transactionHash}`;
