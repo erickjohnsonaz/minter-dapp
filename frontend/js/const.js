@@ -3,7 +3,7 @@ const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Coral Frag Hags NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = 'The Coral Frag Hags NFT Project is a collection of craol frags collected from the Metaverse Reef specially for you.';
+const welcome_p = 'The Coral Frag Hags NFT Project is a collection of coral frags collected from the Metaverse Reef specially for you.';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
